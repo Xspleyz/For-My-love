@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Pacifico&display=swap');
+
+body {
+    background-color: #ffebf3; /* Warna pink pastel */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #ff69b4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #ff4081;
+    font-size: 2.5em;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(255, 64, 129, 0.5);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Membuat dua kolom */
+    gap: 10px; /* Jarak antar item */
+    max-width: 600px; /* Lebar maksimum */
+    margin: 0 auto; /* Agar tetap di tengah */
+}
+
+li {
+    margin: 5px 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    background-color: #ff99cc;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(255, 105, 180, 0.4);
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #ff66a3;
+    transform: scale(1.1);
+}
+
+a:active {
+    background-color: #ff3385;
+}
+
+body::before {
+    content: "💕";
+    font-size: 5em;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    opacity: 0.5;
+}
+
+body::after {
+    content: "💖";
+    font-size: 5em;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    opacity: 0.5;
+}
