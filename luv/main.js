@@ -35,14 +35,18 @@
     }, 2000);
   });
 
-    function tampilkanPesan() {
-      const pesanEl = document.getElementById("pesan");
-      const random = Math.floor(Math.random() * kalimat.length);
-      pesanEl.textContent = kalimat[random];
-      pesanEl.style.animation = "none";
-      void pesanEl.offsetWidth;
-      pesanEl.style.animation = "fadeIn 1s ease";
-    }
+   let index = 0;
+
+function tampilkanPesan() {
+  const pesanEl = document.getElementById("pesan");
+  pesanEl.textContent = kalimat[index];
+  pesanEl.style.animation = "none";
+  void pesanEl.offsetWidth;
+  pesanEl.style.animation = "fadeIn 1s ease";
+
+  index++;
+  if (index >= kalimat.length) index = 0; // balik ke awal kalau sudah habis
+}
 
     document.addEventListener("click", () => {
       const audio = document.getElementById("lagu");
